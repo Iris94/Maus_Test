@@ -1,0 +1,63 @@
+
+
+.section-two-1 {
+    height: 100%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    hr {
+        height: 1px;
+        background-color: #D7DCDF;
+        width: 100%;
+        border: 1px solid #D7DCDF;
+    }
+}
+
+.section-two-1-h {
+    width: 90%;
+    height: 1fr;
+    color: #475487;
+
+    h3 {
+        font-weight: 600;
+        line-height: 7vmin;
+        height: auto;
+        font-size: 3.5vmax;
+    }
+}
+
+.section-two-1-p {
+    width: 100%;
+    height: 1fr;
+    display: flex;
+    gap: 5rem;
+
+    p {
+        width: 95%;
+    }
+}
+
+
+@media only screen and (max-width: 1200px) {
+
+    .section-two-1 {
+        height: fit-content;
+        width: 100%;
+        padding: 0 1em 0 1em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-two-1-p,hr {
+        visibility: hidden;
+        height: 0%;
+    }
+}
+
+
+
+
+

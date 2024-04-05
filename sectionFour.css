@@ -1,0 +1,119 @@
+
+
+.section-four-content > .title {
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    
+    h5 {
+        width: 90%;
+    }
+}
+
+.section-four-content > .companies {
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    gap: 7vmin;
+    
+    .companies-top,
+    .companies-bottom {
+        width: 100%;
+        height: 45%;
+        display: flex;
+        justify-content: space-between;
+        gap: 5vmin;
+
+        .company {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 2vmin;
+
+            .company-img {
+                width: 100%;
+                height: 70%;
+                position: relative;
+
+                img {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    object-fit: cover;
+                }
+            }
+
+            .company-text {
+                width: 100%;
+                height: 30%;
+                padding: 1vmin;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .section-four-content > .title {
+        width: 100%;
+        height: 10%;
+        text-align: center;
+        
+        h5 {
+            width: 90%;
+        }
+    }
+
+    .section-four-content > .companies {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        gap: 10em;
+        
+        .companies-top,
+        .companies-bottom {
+            width: 100%;
+            height: 45%;
+            display: flex;
+            justify-content: space-between;
+            gap: eem;
+    
+            .company {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 0.5em;
+    
+                .company-img {
+                    width: 100%;
+                    height: 50%;
+                    position: relative;
+    
+                    img {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        object-fit: cover;
+                    }
+                }
+    
+                .company-text {
+                    width: 100%;
+                    height: 30%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+}
